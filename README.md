@@ -1,2 +1,0 @@
-# 6289_final_project
-6289_final_project
