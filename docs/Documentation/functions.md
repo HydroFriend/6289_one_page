@@ -2,6 +2,7 @@
 layout: default
 title: Functions
 parent: Documentation
+mathjax: true
 ---
 
 # Functions
@@ -113,8 +114,10 @@ Generate summation of f(x)x in the paper.
 
 **Parameters**:
 
-* sample_method: whether to take random sample x1,x2,… or take symmetric sample like $x_1, -x_1,   x_2, -x_2, …$
-* gradient_scheme: Weather to keep the sign of the perturbation like using sum $f(x)x(default)$ or $sum|f(x)||x|$
+* sample_method: whether to take random sample x1,x2,… or take symmetric sample like $$x_1, -x_1,   x_2, -x_2, …$$
+
+* gradient_scheme: Weather to keep the sign of the perturbation like using sum $$f(x)x(default)$$ or $$\sum \lvert f(x) \lvert \lvert(x)\lvert$$
+
 
 ##  LEG_new_perturbation
 
@@ -145,9 +148,9 @@ Solving the linear problem by mosek solver. You may need a certification to use 
 
 **Parameters**:
 
-* ds_mat: $d^+_t * \sigma$
-* dy_mat: pseudo $D * \sum(f(x)x)$
-* threshold: $\lambda_0$ times the absolute maximum of dy_mat.
+* ds_mat: $$d^+_t * \sigma$$
+* dy_mat: pseudo $$D * \sum(f(x)x)$$
+* threshold: $$\lambda_0$$ times the absolute maximum of dy_mat.
 
 ##  MISC
 
