@@ -9,7 +9,7 @@ grand_parent: Example
 
 [VGG19](https://arxiv.org/abs/1409.1556)
 
-# [](#header-1)Results for VGG16 with ***LEG***:
+# [](#header-1)Results for [VGG19](https://arxiv.org/abs/1409.1556) with ***LEG***:
 
 | description |                input               |                   ***LEG*** output                |
 |:------------|:-----------------------------------|:--------------------------------------------------|
@@ -19,7 +19,7 @@ grand_parent: Example
 
 
 
-# [](#header-2)Results for VGG16 with ***LEGTV***
+# [](#header-2)Results for [VGG19](https://arxiv.org/abs/1409.1556) with ***LEGTV***
 
 | description |                input               |                   ***LEGTV*** output                  |
 |:------------|:-----------------------------------|:------------------------------------------------------|

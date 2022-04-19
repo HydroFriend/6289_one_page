@@ -1,14 +1,12 @@
 ---
 layout: default
-title: ResNet50
-parent: Computer Vision
+title: distilbert-base-uncased
+parent: NLP
 grand_parent: Example
 # permalink: /docs/Example/Computer Vision/ResNet50
 ---
 
-
-
-# [](#header-1)Results for [ResNet50](https://arxiv.org/abs/1512.03385) with ***LEG***:
+# [](#header-1)Results for [distilbert-base-uncased](https://huggingface.co/distilbert-base-uncased) with ***LEG***:
 
 | description |                input               |                   ***LEG*** output                |
 |:------------|:-----------------------------------|:--------------------------------------------------|
@@ -18,7 +16,7 @@ grand_parent: Example
 
 
 
-# [](#header-2)Results for [ResNet50](https://arxiv.org/abs/1512.03385) with ***LEGTV***
+# [](#header-2)Results for [distilbert-base-uncased](https://huggingface.co/distilbert-base-uncased) with ***LEGTV***
 
 | description |                input               |                   ***LEGTV*** output                  |
 |:------------|:-----------------------------------|:------------------------------------------------------|

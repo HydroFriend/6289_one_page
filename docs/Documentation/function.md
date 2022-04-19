@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Functions
+title: Function
 parent: Documentation
 mathjax: true
 ---
 
-# Functions
+# Function
 {: .no_toc }
 
 ## Table of contents

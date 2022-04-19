@@ -11,21 +11,21 @@ permalink: /docs/example/computer-vision/vgg16
 
 
 
-# [](#header-1)Results for VGG16 with ***LEG***:
+# [](#header-1)Results for [VGG16](https://arxiv.org/abs/1409.1556) with ***LEG***:
 
 | description |                input               |                   ***LEG*** output                |
 |:------------|:-----------------------------------|:--------------------------------------------------|
 | balloon     | ![](../../../image/balloon224.jpg) | ![](../../../leg-out/vgg16/LEG_VGG16balloon.jpg)  |
 | bear        | ![](../../../image/bear224.jpg)    | ![](../../../leg-out/vgg16/LEG_VGG16bear.jpg)     |
-| soccer      | ![](../../../image/soccer224.jpg)  | ![](../../../leg-out/vgg16/LEG_VGG16soccer.jpg)   |
+| soccer      | ![](../../../image/soccer224.jpg)  | ![](../../../leg-out/vgg16/LEG_VGG16soccer.png)   |
 
 
 
-# [](#header-2)Results for VGG16 with ***LEGTV***
+# [](#header-2)Results for [VGG16](https://arxiv.org/abs/1409.1556) with ***LEGTV***
 
 | description |                input               |                   ***LEGTV*** output                  |
 |:------------|:-----------------------------------|:------------------------------------------------------|
 | balloon     | ![](../../../image/balloon224.jpg) | ![](../../../legtv-out/vgg16/LEGTV_VGG16balloon.jpg)  |
 | bear        | ![](../../../image/bear224.jpg)    | ![](../../../legtv-out/vgg16/LEGTV_VGG16bear.jpg)     |
-| soccer      | ![](../../../image/soccer224.jpg)  | ![](../../../legtv-out/vgg16/LEGTV_VGG16soccer.jpg)   |
+| soccer      | ![](../../../image/soccer224.jpg)  | ![](../../../legtv-out/vgg16/LEGTV_VGG16soccer.png)   |
 
