@@ -6,21 +6,7 @@ description: "LEG(Linearly Estimated Gradient) is a high level deep learning mod
 permalink: /
 mathjax: true
 ---
-
-
-
-# LEG(Linearly Estimated Gradient)
-{: .fs-9 }
-
-LEG gives you a visual interpretation of what is happening under the hood of deep learning models.
-{: .fs-6 .fw-300 }
-
-<!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }  -->
-[View it on GitHub](https://github.com/Paradise1008/LEG){: .btn .fs-5 .mb-4 .mb-md-0 }
-
----
-
-## Getting started
+<!-- ## Getting started -->
 
 <!-- {: .no_toc }
 
@@ -31,26 +17,30 @@ LEG gives you a visual interpretation of what is happening under the hood of dee
 {:toc} -->
 
 
+# LEG (Linearly Estimated Gradient)
+{: .fs-9 }
 
-### What is LEG explainer?
+LEG gives you a visual interpretation of what is happening under the hood of deep learning models.
+{: .fs-6 .fw-300 }
 
-LEG is a statistical framework for saliency estimation for black-box computer vision
-models. You can find the paper [here](https://openaccess.thecvf.com/content/ICCV2021/papers/Luo_Statistically_Consistent_Saliency_Estimation_ICCV_2021_paper.pdf)
+<!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }  -->
+[View it on GitHub](https://github.com/Paradise1008/LEG){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-There is also a new computationally efficient estimator (LEG-TV) proposed using graphical
-representations of data.
+---
+
+
 
 
 ## A Visual Example
 
-![](image/legpaper.png)
+![](image/legpaper_small.jpg)
 
 ---
 
 # Examples
 
 This section provides explained examples with LEG explainer:
-* Computer Vision
+<!-- * Computer Vision -->
 <!-- * NLP -->
 
 ## CV
@@ -118,6 +108,17 @@ In these CV examples we will give the input original image and the [saliency map
 | balloon     | ![](image/balloon224.jpg) | ![](legtv-out/resnet50/LEGTV_ResNetballoon.jpg)  |
 | bear        | ![](image/bear224.jpg)    | ![](legtv-out/resnet50/LEGTV_ResNetbear.jpg)     |
 | soccer      | ![](image/soccer224.jpg)  | ![](legtv-out/resnet50/LEGTV_ResNetsoccer.jpg) 
+
+
+
+
+### What is LEG explainer?
+
+LEG is a statistical framework for saliency estimation for black-box computer vision
+models. You can find the paper [here](https://openaccess.thecvf.com/content/ICCV2021/papers/Luo_Statistically_Consistent_Saliency_Estimation_ICCV_2021_paper.pdf)
+
+There is also a new computationally efficient estimator (LEG-TV) proposed using graphical
+representations of data.
 
 
 
@@ -434,4 +435,4 @@ NLP examples interpreted from [SHAP](https://github.com/slundberg/shap). -->
 
 ## About the project
 
-LEG explainer 2019-{{ "now" | date: "%Y" }} by [Paradise1008](https://github.com/Paradise1008).
+LEG explainer GitHub Link here [https://github.com/Paradise1008](https://github.com/Paradise1008).
