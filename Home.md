@@ -37,13 +37,13 @@ LEG gives you a visual interpretation of what is happening under the hood of dee
 
 ---
 
-# Examples
+<!-- # Examples
 
-This section provides explained examples with LEG explainer:
+This section provides explained examples with LEG explainer: -->
 <!-- * Computer Vision -->
 <!-- * NLP -->
 
-## CV
+## CV Examples
 
 In these CV examples we will give the input original image and the [saliency map](https://en.wikipedia.org/wiki/Saliency_map#:~:text=In%20computer%20vision%2C%20a%20saliency,to%20the%20human%20visual%20system.) interpreted from LEG and LEG-TV.
 
