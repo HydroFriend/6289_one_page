@@ -15,29 +15,22 @@ mathjax: true
 LEG gives you a visual interpretation of what is happening under the hood of deep learning models.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/Paradise1008/LEG){: .btn .fs-5 .mb-4 .mb-md-0 }
+<!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }  -->
+[View it on GitHub](https://github.com/Paradise1008/LEG){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 ## Getting started
 
-{: .no_toc }
+<!-- {: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+{:toc} -->
 
 
-
-### Dependencies
-
-* [cvxpy](https://github.com/cvxgrp/cvxpy) 
-* [Mosek](https://www.mosek.com/documentation/)
-* [tensorflow/keras](https://www.tensorflow.org/)
-* [matplotlib](https://matplotlib.org/users/installing.html)
-* [skimage](https://github.com/scikit-image/scikit-image)
 
 ### What is LEG explainer?
 
@@ -54,13 +47,78 @@ representations of data.
 
 ---
 
-## About the project
+# Examples
 
-LEG explainer 2019-{{ "now" | date: "%Y" }} by [Paradise1008](https://github.com/Paradise1008).
+This section provides explained examples with LEG explainer:
+* Computer Vision
+<!-- * NLP -->
 
-## License
+## CV
 
-None
+In these CV examples we will give the input original image and the [saliency map](https://en.wikipedia.org/wiki/Saliency_map#:~:text=In%20computer%20vision%2C%20a%20saliency,to%20the%20human%20visual%20system.) interpreted from LEG and LEG-TV.
+
+
+
+## VGG16
+
+### [](#header-1)Results for [VGG16](https://arxiv.org/abs/1409.1556) with ***LEG***:
+
+| description |                input               |                   ***LEG*** output                |
+|:------------|:-----------------------------------|:--------------------------------------------------|
+| balloon     | ![](image/balloon224.jpg) | ![](leg-out/vgg16/LEG_VGG16balloon.jpg)  |
+| bear        | ![](image/bear224.jpg)    | ![](leg-out/vgg16/LEG_VGG16bear.jpg)     |
+| soccer      | ![](image/soccer224.jpg)  | ![](leg-out/vgg16/LEG_VGG16soccer.png)   |
+
+
+
+### [](#header-2)Results for [VGG16](https://arxiv.org/abs/1409.1556) with ***LEGTV***
+
+| description |                input               |                   ***LEGTV*** output                  |
+|:------------|:-----------------------------------|:------------------------------------------------------|
+| balloon     | ![](image/balloon224.jpg) | ![](legtv-out/vgg16/LEGTV_VGG16balloon.jpg)  |
+| bear        | ![](image/bear224.jpg)    | ![](legtv-out/vgg16/LEGTV_VGG16bear.jpg)     |
+| soccer      | ![](image/soccer224.jpg)  | ![](legtv-out/vgg16/LEGTV_VGG16soccer.png)   |
+
+## VGG19
+
+### [](#header-1)Results for [VGG19](https://arxiv.org/abs/1409.1556) with ***LEG***:
+
+| description |                input               |                   ***LEG*** output                |
+|:------------|:-----------------------------------|:--------------------------------------------------|
+| balloon     | ![](image/balloon224.jpg) | ![](leg-out/vgg19/LEG_VGG19balloon.jpg)  |
+| bear        | ![](image/bear224.jpg)    | ![](leg-out/vgg19/LEG_VGG19bear.jpg)     |
+| soccer      | ![](image/soccer224.jpg)  | ![](leg-out/vgg19/LEG_VGG19soccer.jpg)   |
+
+
+
+### [](#header-2)Results for [VGG19](https://arxiv.org/abs/1409.1556) with ***LEGTV***
+
+| description |                input               |                   ***LEGTV*** output                  |
+|:------------|:-----------------------------------|:------------------------------------------------------|
+| balloon     | ![](image/balloon224.jpg) | ![](legtv-out/vgg19/LEGTV_VGG19balloon.jpg)  |
+| bear        | ![](image/bear224.jpg)    | ![](legtv-out/vgg19/LEGTV_VGG19bear.jpg)     |
+| soccer      | ![](image/soccer224.jpg)  | ![](legtv-out/vgg19/LEGTV_VGG19soccer.jpg)   |
+
+## ResNet50
+
+### [](#header-1)Results for [ResNet50](https://arxiv.org/abs/1512.03385) with ***LEG***:
+
+| description |                input               |                   ***LEG*** output                |
+|:------------|:-----------------------------------|:--------------------------------------------------|
+| balloon     | ![](image/balloon224.jpg) | ![](leg-out/resnet50/LEG_ResNetballoon.jpg)  |
+| bear        | ![](image/bear224.jpg)    | ![](leg-out/resnet50/LEG_ResNetbear.jpg)     |
+| soccer      | ![](image/soccer224.jpg)  | ![](leg-out/resnet50/LEG_ResNetsoccer.jpg)   |
+
+
+
+### [](#header-2)Results for [ResNet50](https://arxiv.org/abs/1512.03385) with ***LEGTV***
+
+| description |                input               |                   ***LEGTV*** output                  |
+|:------------|:-----------------------------------|:------------------------------------------------------|
+| balloon     | ![](image/balloon224.jpg) | ![](legtv-out/resnet50/LEGTV_ResNetballoon.jpg)  |
+| bear        | ![](image/bear224.jpg)    | ![](legtv-out/resnet50/LEGTV_ResNetbear.jpg)     |
+| soccer      | ![](image/soccer224.jpg)  | ![](legtv-out/resnet50/LEGTV_ResNetsoccer.jpg) 
+
 
 
 # Quick Start
@@ -70,6 +128,15 @@ Before you begin, please read the [installation guide]({{ site.baseurl }}/docs/I
 
 
 ---
+
+
+### Dependencies
+
+* [cvxpy](https://github.com/cvxgrp/cvxpy) 
+* [Mosek](https://www.mosek.com/documentation/)
+* [tensorflow/keras](https://www.tensorflow.org/)
+* [matplotlib](https://matplotlib.org/users/installing.html)
+* [skimage](https://github.com/scikit-image/scikit-image)
 
 ## Main Structure
 
@@ -344,79 +411,27 @@ Other functions like get_mask, sensitivity_anal, generateHeatmap are used to gen
 
 
 
-# Examples
+  |
 
-This section provides explained examples with LEG explainer:
-* Computer Vision
-* NLP
 
-## CV
+<!-- ## NLP
 
-In these CV examples we will give the input original image and the [saliency map](https://en.wikipedia.org/wiki/Saliency_map#:~:text=In%20computer%20vision%2C%20a%20saliency,to%20the%20human%20visual%20system.) interpreted from LEG and LEG-TV.
+NLP examples interpreted from [SHAP](https://github.com/slundberg/shap). -->
 
 
 
-## VGG16
 
-### [](#header-1)Results for [VGG16](https://arxiv.org/abs/1409.1556) with ***LEG***:
+## To cite this paper
+<pre>
+@inproceedings{luo2021statistically,
+  title={Statistically Consistent Saliency Estimation},
+  author={Luo, Shunyan and Barut, Emre and Jin, Fang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={745--753},
+  year={2021}
+}
+</pre>
 
-| description |                input               |                   ***LEG*** output                |
-|:------------|:-----------------------------------|:--------------------------------------------------|
-| balloon     | ![](image/balloon224.jpg) | ![](leg-out/vgg16/LEG_VGG16balloon.jpg)  |
-| bear        | ![](image/bear224.jpg)    | ![](leg-out/vgg16/LEG_VGG16bear.jpg)     |
-| soccer      | ![](image/soccer224.jpg)  | ![](leg-out/vgg16/LEG_VGG16soccer.png)   |
+## About the project
 
-
-
-### [](#header-2)Results for [VGG16](https://arxiv.org/abs/1409.1556) with ***LEGTV***
-
-| description |                input               |                   ***LEGTV*** output                  |
-|:------------|:-----------------------------------|:------------------------------------------------------|
-| balloon     | ![](image/balloon224.jpg) | ![](legtv-out/vgg16/LEGTV_VGG16balloon.jpg)  |
-| bear        | ![](image/bear224.jpg)    | ![](legtv-out/vgg16/LEGTV_VGG16bear.jpg)     |
-| soccer      | ![](image/soccer224.jpg)  | ![](legtv-out/vgg16/LEGTV_VGG16soccer.png)   |
-
-## VGG19
-
-### [](#header-1)Results for [VGG19](https://arxiv.org/abs/1409.1556) with ***LEG***:
-
-| description |                input               |                   ***LEG*** output                |
-|:------------|:-----------------------------------|:--------------------------------------------------|
-| balloon     | ![](image/balloon224.jpg) | ![](leg-out/vgg19/LEG_VGG19balloon.jpg)  |
-| bear        | ![](image/bear224.jpg)    | ![](leg-out/vgg19/LEG_VGG19bear.jpg)     |
-| soccer      | ![](image/soccer224.jpg)  | ![](leg-out/vgg19/LEG_VGG19soccer.jpg)   |
-
-
-
-### [](#header-2)Results for [VGG19](https://arxiv.org/abs/1409.1556) with ***LEGTV***
-
-| description |                input               |                   ***LEGTV*** output                  |
-|:------------|:-----------------------------------|:------------------------------------------------------|
-| balloon     | ![](image/balloon224.jpg) | ![](legtv-out/vgg19/LEGTV_VGG19balloon.jpg)  |
-| bear        | ![](image/bear224.jpg)    | ![](legtv-out/vgg19/LEGTV_VGG19bear.jpg)     |
-| soccer      | ![](image/soccer224.jpg)  | ![](legtv-out/vgg19/LEGTV_VGG19soccer.jpg)   |
-
-## ResNet50
-
-### [](#header-1)Results for [ResNet50](https://arxiv.org/abs/1512.03385) with ***LEG***:
-
-| description |                input               |                   ***LEG*** output                |
-|:------------|:-----------------------------------|:--------------------------------------------------|
-| balloon     | ![](image/balloon224.jpg) | ![](leg-out/resnet50/LEG_ResNetballoon.jpg)  |
-| bear        | ![](image/bear224.jpg)    | ![](leg-out/resnet50/LEG_ResNetbear.jpg)     |
-| soccer      | ![](image/soccer224.jpg)  | ![](leg-out/resnet50/LEG_ResNetsoccer.jpg)   |
-
-
-
-### [](#header-2)Results for [ResNet50](https://arxiv.org/abs/1512.03385) with ***LEGTV***
-
-| description |                input               |                   ***LEGTV*** output                  |
-|:------------|:-----------------------------------|:------------------------------------------------------|
-| balloon     | ![](image/balloon224.jpg) | ![](legtv-out/resnet50/LEGTV_ResNetballoon.jpg)  |
-| bear        | ![](image/bear224.jpg)    | ![](legtv-out/resnet50/LEGTV_ResNetbear.jpg)     |
-| soccer      | ![](image/soccer224.jpg)  | ![](legtv-out/resnet50/LEGTV_ResNetsoccer.jpg)   |
-
-
-## NLP
-
-NLP examples interpreted from [SHAP](https://github.com/slundberg/shap).
+LEG explainer 2019-{{ "now" | date: "%Y" }} by [Paradise1008](https://github.com/Paradise1008).
