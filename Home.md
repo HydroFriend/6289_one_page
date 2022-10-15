@@ -24,7 +24,9 @@ LEG gives you a visual interpretation of what is happening under the hood of dee
 {: .fs-6 .fw-300 }
 
 <!-- [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }  -->
-[View it on GitHub](https://github.com/Paradise1008/LEG){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View it on GitHub](https://github.com/Paradise1008/LEG)
+[Try it on Google Colab](https://colab.research.google.com/drive/1CcFfpcG7N0UNqcld7cYB5Y45hOpTipPG#scrollTo=ykkrWKKr9G3w)
+{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
